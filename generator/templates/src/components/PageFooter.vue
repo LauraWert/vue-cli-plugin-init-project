@@ -3,18 +3,18 @@
     <div class="row footer justify-center">
       <div class="col-md-8 col-xs-12 row">
         <div class="col-md-2 row col-sm-3 col-xs-3 q-mt-xl">
-          {{ $t('texts.footer.placeholder') }}
+          placeholder
         </div>
         <div class="col-md-8 col-sm-9 col-xs-9">
           <div class="title">
-            {{ $t('texts.footer.placeholder') }}
+            placeholder
           </div>
           <div class="subtitle">
-            {{ $t('texts.footer.placeholder') }}
+            placeholder
           </div>
         </div>
         <div class="col-md-2 gt-sm q-mt-xl">
-          {{ $t('texts.footer.placeholder') }}
+          placeholder
         </div>
       </div>
     </div>

@@ -21,7 +21,7 @@ module.exports = function(api) {
       fs.unlinkSync('tests/unit/example.spec.ts')
     } catch (e) {}
 
-    rimraf('rc/views', () => {})
+    rimraf('src/views', () => {})
     rimraf('tests/e2e', () => {})
   })
 }

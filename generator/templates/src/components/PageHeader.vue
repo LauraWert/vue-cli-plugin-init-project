@@ -8,7 +8,6 @@
           icon="menu"
           @click="$emit('openSideMenu')"
         />
-        <img class="logo" src="@/assets/logo.svg">
         <q-space />
         <top-menu class="user-top-menu" />
       </q-toolbar>
@@ -39,7 +38,4 @@ export default class PageHeader extends Vue {}
 
   .toolbar
     height 50px
-
-  .logo
-    max-height: 25px
 </style>

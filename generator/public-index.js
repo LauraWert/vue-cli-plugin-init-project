@@ -9,7 +9,7 @@ module.exports = function(api) {
     const noScriptIdx = lines.findIndex(line => line.match(/<noscript>/))
 
     lines[noScriptIdx + 1] =
-      `      <strong>De applicatie werkt niet zonder javascript. Activeer javascript om door te kunnen gaan.</strong>`,
+      `      <strong>This application does not work without javascript. Please enable javascript to continue.</strong>`,
 
       fs.writeFileSync('public/index.html', lines.join(EOL), { encoding: 'utf-8' })
   })

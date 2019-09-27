@@ -1,5 +1,5 @@
 vue-cli-plugin-init-project
-# install
+# Prepare
 - add the following json to your ~/.vuerc file
 ```json
 "presets": {
@@ -28,6 +28,7 @@ vue-cli-plugin-init-project
   }
 }
 ```
+#Install
 - make a new vue project with the lauraWert preset
 ```bash
 vue create <project-name>
@@ -42,5 +43,19 @@ yarn add --dev @laura-wert/vue-cli-plugin-init-project
 ```bash 
 vue invoke @laura-wert/vue-cli-plugin-init-project 
 ```
-
+#Installing plugin locally
+- make a new vue project with the lauraWert preset
+```bash
+vue create <project-name>
+```
+- choose the lauraWert preset
+- add the plugin
+```bash
+cd <project-name>
+yarn add --dev file:/full/path/to/your/plugin
+```
+- install the boiler plate
+```bash 
+vue invoke @laura-wert/vue-cli-plugin-init-project 
+```
 

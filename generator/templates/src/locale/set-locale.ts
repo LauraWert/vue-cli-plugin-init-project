@@ -1,5 +1,5 @@
 import { loadQuasarLanguageAsync } from '@/plugins/quasar'
-import { loadVeeValidateLanguageAsync } from '@/plugins/vee-validate'
+import { loadVeeValidateLanguageAsync } from '@/plugins/vee-form-handler'
 
 const loadedLanguages: string[] = []
 export default function(lang: string): void {

@@ -2,17 +2,17 @@
   <div>
     <router-view />
     <loading :pending="$anyXhrPending()" />
-    <error :last-error="$lastXhrErrorResponse()" />
+    <error-notify :last-error="$lastXhrErrorResponse()" />
   </div>
 </template>
 
 <script lang="ts">
 import Loading from '@/components/Loading.ts'
-import Error from '@laura-wert/vee-form-handler'
+import { ErrorNotify } from '@laura-wert/vee-form-handler'
 import { Component, Vue } from 'vue-property-decorator'
 
 @Component({
-  components: { Error, Loading },
+  components: { ErrorNotify, Loading },
 })
 export default class App extends Vue {}
 </script>

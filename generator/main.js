@@ -12,7 +12,7 @@ module.exports = function(api) {
     const oldImportVueIdx = lines.findIndex(line => line.match(/import Vue from 'vue'/))
     if (oldImportVueIdx !== -1) {
       lines.splice(oldImportVueIdx, 1,
-        `import setLocale from '@/locale/set-locale'${EOL}import ie10support from 'src/plugins/ie-10-support'${EOL}import quasar from 'src/plugins/quasar'${EOL}import veeValidate from 'src/plugins/vee-validate'${EOL}import 'src/styles/index.styl'${EOL}import Vue, { CreateElement, VNode } from 'vue'`,
+        `import setLocale from '@/locale/set-locale'${EOL}import ie10support from 'src/plugins/ie-10-support'${EOL}import quasar from 'src/plugins/quasar'${EOL}import veeFormHandler from 'src/plugins/vee-form-handler'${EOL}import 'src/styles/index.styl'${EOL}import Vue, { CreateElement, VNode } from 'vue'`,
       )
     }
 
@@ -26,7 +26,7 @@ module.exports = function(api) {
       const newVueIdx = lines.findIndex(line => line.match(/new Vue/))
 
       lines.splice(newVueIdx, 0,
-        `ie10support()${EOL}quasar({ Vue })${EOL}veeValidate({ Vue })${EOL}setLocale(process.env.VUE_APP_LOCALE || 'en')${EOL}`,
+        `ie10support()${EOL}quasar({ Vue })${EOL}veeFormHandler({ Vue })${EOL}setLocale(process.env.VUE_APP_LOCALE || 'en')${EOL}`,
       )
     }
 

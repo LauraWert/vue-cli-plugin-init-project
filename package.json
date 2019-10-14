@@ -16,6 +16,9 @@
   "scripts": {
     "release": "yarn git-clean-status && yarn publish"
   },
+  "dependencies": {
+    "rimraf": "^3.0.0"
+  },
   "devDependencies": {
     "@laura-wert/git-clean-status": "^1.0.0"
   },

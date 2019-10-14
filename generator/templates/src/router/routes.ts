@@ -1,6 +1,6 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import { RouteConfig } from 'vue-router'
 
-/* tslint:disable:typedef */
 export default [
   {
     path: '',

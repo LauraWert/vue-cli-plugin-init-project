@@ -41,7 +41,7 @@
 <script lang="ts">
 import { QBtn, QItem, QItemSection, QList, QMenu, QSeparator } from 'quasar'
 import Vue from 'vue'
-import { Component, Prop } from 'vue-property-decorator'
+import { Component } from 'vue-property-decorator'
 
 @Component({
   components: {

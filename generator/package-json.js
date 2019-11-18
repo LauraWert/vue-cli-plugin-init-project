@@ -61,7 +61,7 @@ module.exports = function(api) {
         lines
           .slice(lintStagedIdx)
           .findIndex(line => line.match(/"vue-cli-service lint"/))
-      console.log('oldLintIdx' + oldLintIdx)
+
       lines.splice(oldLintIdx, 1, `      "yarn lint",`)
       fs.writeFileSync('package.json', lines.join(EOL), { encoding: 'utf-8' })
     }

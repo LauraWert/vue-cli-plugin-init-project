@@ -7,6 +7,7 @@ module.exports = function(api) {
 
     tsconfig.compilerOptions.strictNullChecks = true
     tsconfig.compilerOptions.resolveJsonModule = true
+    tsconfig.compilerOptions.noUnusedLocals = true
     if (tsconfig.compilerOptions.types.indexOf('node') === -1) {
       tsconfig.compilerOptions.types.push('node')
       tsconfig.compilerOptions.types.push('sinon')

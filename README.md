@@ -52,7 +52,7 @@ vue create <project-name>
 - add the plugin
 ```bash
 cd <project-name>
-yarn add --dev file:/full/path/to/your/plugin
+yarn add --dev /full/path/to/your/plugin
 ```
 - install the boiler plate
 ```bash 

@@ -23,7 +23,6 @@ vue-cli-plugin-init-project
     },
     "router": true,
     "routerHistoryMode": true,
-    "vuex": true,
     "cssPreprocessor": "stylus"
   }
 }

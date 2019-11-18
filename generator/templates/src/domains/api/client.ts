@@ -1,3 +1,4 @@
+import { installAllHandlers } from '@laura-wert/axios-handlers'
 import axios, { AxiosInstance } from 'axios'
 
 const client: AxiosInstance = axios.create({
@@ -10,3 +11,5 @@ const client: AxiosInstance = axios.create({
 })
 
 export default client
+
+export const axiosHandlers = installAllHandlers(client)

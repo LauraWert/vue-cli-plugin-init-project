@@ -1,4 +1,4 @@
-import VeeFormHandler, { localize, IPartialDictionary } from '@laura-wert/vee-form-handler'
+import VeeFormHandler, { IPartialDictionary, localize } from '@laura-wert/vee-form-handler'
 import { VueConstructor } from 'vue'
 
 export default ({ Vue }: { Vue: VueConstructor }): void => {

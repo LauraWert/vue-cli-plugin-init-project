@@ -1,8 +1,5 @@
 /* tslint:disable-next-line */
 declare namespace Cypress {
-  // @ts-ignore
-  import { Store } from 'vuex'
-
   /* tslint:disable interface-name no-any */
   interface Chainable<Subject = any> {
     getByName<E extends Node = HTMLElement>(...parts: string[]): Chainable<JQuery<E>>
@@ -25,8 +22,6 @@ declare namespace Cypress {
       errorMessage: string,
       index?: number,
     ): void
-
-    loadStore(): Promise<Store>
 
     selectOption(labelOrIndex: string | string[] | number | number[]): void
 

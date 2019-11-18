@@ -20,7 +20,7 @@ module.exports = function(api) {
       '@laura-wert/vue-helpers': '^3.0.0',
       '@quasar/extras': '^1.3.1',
       '@types/chai-as-promised': '^7.1.2',
-      'axios': '^0.19.0',
+      'axios': '^0.18.0',
       'dotenv-safe': '^8.1.0',
       'quasar': '^1.1.4',
       'vee-validate': '3.0.8',
